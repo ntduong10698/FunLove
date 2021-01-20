@@ -1,0 +1,95 @@
+:root {
+
+}
+
+/* GENERAL */
+.jconfirm {
+    z-index: 9999999999;
+}
+/* END_GENERAL */
+
+/* HEART */
+.heart_float {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* END_HEART */
+
+/* HEADER */
+.u-text-1 {
+    pointer-events: initial;
+    font-family: "Alex Brush";
+    font-size: 6rem;
+    margin: 50px auto 0 0;
+}
+
+.u-text-2 {
+    letter-spacing: 9px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.u-text {
+    word-wrap: break-word;
+    position: relative;
+}
+/* END_HEADER */
+
+/* MAIN */
+
+main {
+    margin: 50px 0 60px;
+}
+
+.elem, .elem * {
+	box-sizing: border-box;
+	margin: 0 !important;	
+}
+.elem {
+	display: inline-block;
+	font-size: 0;
+	width: 33%;
+	/* border: 20px solid transparent; */
+	border-bottom: none;
+	background: #fff;
+	padding: 10px;
+	height: auto;
+    background-clip: padding-box;
+}
+.elem > span {
+	display: block;
+	cursor: pointer;
+	height: 0;
+	padding-bottom:	70%;
+	background-size: cover;	
+    background-position: center center;
+    position: relative;
+}
+
+.elem > span::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    transition: all 200ms ease;
+}
+
+.elem > span:hover::before {
+    opacity: 1;
+}
+/* END_MAIN */
+
+/* FOOTER */
+footer {
+    color: #ffffff;
+    background-color: #333333;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* END_FOOTER */

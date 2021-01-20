@@ -20,8 +20,9 @@ $(function() {
 })
 
 function callAlter() {
+    let count = 21000 + Math.floor((Date.now() - new Date("2021-01-20")) / 86400000) * 1000;
     $.confirm({
-        title: '<i class="fas fa-heart text-danger"></i> 21000 <i class="fas fa-heart text-danger"></i>',
+        title: `<i class="fas fa-heart text-danger"></i> ${count} <i class="fas fa-heart text-danger"></i>`,
         content: 'Có thích thằng viết code không?',
         type: 'blue',
         buttons: {
